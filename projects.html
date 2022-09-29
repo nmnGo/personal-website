@@ -1,0 +1,219 @@
+<!-- Projects -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HEAD -->
+  <head id="top">
+    <meta charset="UTF-8" />
+    <title>Projects · Naman Goyal</title>
+    <meta
+      name="Description"
+      content="I am a young and energetic Student, looking for challenging opportunities to grow my skills. My intellectual curiosity also drives me to be a lifelong learner, and so I'm seeking to connect with like-minded people to learn and grow more."
+    />
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/hover-min.css" />
+
+    <!-- Javascript -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+      /* Back button appears on scroll */
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 20) {
+          $(".back").removeClass("no-display");
+        } else {
+          $(".back").addClass("no-display");
+        }
+      });
+
+      /* Forward button appears on scroll */
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 20) {
+          $(".forward").removeClass("no-display");
+        } else {
+          $(".forward").addClass("no-display");
+        }
+      });
+
+      /* Scroll button appears on scroll */
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 20) {
+          $(".scroll-to-top").removeClass("no-display");
+        } else {
+          $(".scroll-to-top").addClass("no-display");
+        }
+      });
+
+      /* Smooth Scrolling */
+      $(document).ready(function () {
+        $("a").on("click", function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              500,
+              function () {
+                window.location.hash = hash;
+              }
+            );
+          }
+        });
+      });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+
+  <body class="grid">
+    <!-- Header -->
+    <header class="c12">
+      <!-- Nav -->
+      <div class="hero">
+        <div class="header">
+          <a href="/"
+            ><img alt="Naman's logo" src="images/myLogo.png" class="dc-logo"
+          /></a>
+          <h3 class="medium content-web">Naman Goyal</h3>
+          <nav class="nav">
+            <h5 class="option"><a href="/">Home</a></h5>
+            <h5 class="option"><a href="about.html">About</a></h5>
+            <h5 class="option selected">Projects</h5>
+            <h5 class="option"><a href="resume.html">Resume</a></h5>
+          </nav>
+        </div>
+
+        <!-- Title -->
+        <div class="title">
+          <h1 class="content-web emoji">💻</h1>
+          <div>
+            <h1 class="content-mobile">💻</h1>
+            <h1 class="project-title">
+              My Projects.<br />
+              <span class="medium">Made with 🧡 by me.</span>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="c12 main">
+      <!-- Budget -->
+      <div class="section">
+        <h2 class="project project-budget">
+          Budget Manager <span class="medium"></span>
+        </h2>
+        <div class="scroll">
+          <a href="https://github.com/nmnGo/BudegetWeb">
+            <img
+              alt="Budget Web"
+              src="images/projects/Picture4.png"
+              class="photo"
+            />
+            <img
+              alt="Budget Web"
+              src="images/projects/pic4.png"
+              class="photo"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- HeyMAte -->
+      <div class="section">
+        <h2 class="project project-heymate">
+          Heymate <span class="medium"></span>
+        </h2>
+        <div class="scroll">
+          <a href="nmngo.github.io/HeyMate/">
+            <img
+              alt="Hey Mate"
+              src="images/projects/Picture3.jpg"
+              class="photo"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- Food Buddy -->
+      <div class="section">
+        <h2 class="project project-food">
+          Food Buddy <span class="medium"></span>
+        </h2>
+        <div class="scroll">
+          <a href="https://statuesque-marzipan-70ef45.netlify.app/">
+            <img
+              alt=" Food Buddy"
+              src="images/projects/foodbuddy.PNG"
+              class="photo"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2 class="project project-ecom">
+          E commerce Website <span class="medium"></span>
+        </h2>
+        <div class="scroll">
+          <a href="https://github.com/nmnGo">
+            <img
+              alt=" Food Buddy"
+              src="images/projects/pic1.png"
+              class="photo"
+            />
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="c12 grid">
+      <div class="c6-left">
+        <p>
+          If you’re looking to work with me or want to grab some coffee, feel
+          free to email me at
+          <a
+            href="mailto:itznaman2001.com?subject=Hey!"
+            target="_blank"
+            rel="noopener"
+            >itznaman2001@gmail.com</a
+          >.
+        </p>
+      </div>
+      <div class="social">
+        <a href="https://github.com/nmnGo" target="_blank" rel="noopener"
+          ><img alt="Github icon" src="icons/github.svg" class="icons"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/naman-goyal-0b3335208/"
+          target="_blank"
+          rel="noopener"
+          ><img alt="LinkedIn icon" src="icons/linkedin.svg" class="icons"
+        /></a>
+        <a
+          href="https://auth.geeksforgeeks.org/user/nmngouza/practice"
+          target="_blank"
+          rel="noopener"
+          ><img
+            alt="GFG icon"
+            src="icons/120px-GeeksforGeeks.svg.png"
+            class="icons"
+        /></a>
+      </div>
+
+      <!-- Scroll To Top -->
+      <a
+        href="#top"
+        aria-label="scroll to top"
+        class="content-web no-display scroll-to-top"
+      ></a>
+    </footer>
+  </body>
+</html>

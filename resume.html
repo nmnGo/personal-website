@@ -1,0 +1,287 @@
+<!-- Resume -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HEAD -->
+  <head id="top">
+    <meta charset="UTF-8" />
+    <title>Resume · Naman Goyal</title>
+    <meta
+      name="Description"
+      content="I am a young and energetic professional, looking for challenging opportunities to grow my skills. My intellectual curiosity also drives me to be a lifelong learner, and so I'm seeking to connect with like-minded people to learn and grow more."
+    />
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/hover-min.css" />
+
+    <!-- Javascript -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+      /* Back button appears on scroll */
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 20) {
+          $(".back").removeClass("no-display");
+        } else {
+          $(".back").addClass("no-display");
+        }
+      });
+
+      /* Forward button appears on scroll */
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 20) {
+          $(".forward").removeClass("no-display");
+        } else {
+          $(".forward").addClass("no-display");
+        }
+      });
+
+      /* Scroll button appears on scroll */
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 20) {
+          $(".scroll-to-top").removeClass("no-display");
+        } else {
+          $(".scroll-to-top").addClass("no-display");
+        }
+      });
+
+      /* Smooth Scrolling */
+      $(document).ready(function () {
+        $("a").on("click", function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              500,
+              function () {
+                window.location.hash = hash;
+              }
+            );
+          }
+        });
+      });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-SQWGXQ6RLM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-SQWGXQ6RLM");
+    </script>
+  </head>
+
+  <body class="grid">
+    <!-- Header -->
+    <header class="c12">
+      <!-- Nav -->
+      <div class="hero">
+        <div class="header">
+          <a href="/"
+            ><img
+              alt="Naman's Logo logo"
+              src="images/myLogo.png"
+              class="dc-logo"
+          /></a>
+          <h3 class="medium content-web">Naman Goyal</h3>
+          <nav class="nav">
+            <h5 class="option"><a href="/">Home</a></h5>
+            <h5 class="option"><a href="about.html">About</a></h5>
+            <h5 class="option"><a href="projects.html">Projects</a></h5>
+            <h5 class="option selected">Resume</h5>
+          </nav>
+        </div>
+
+        <!-- Title -->
+        <div class="title">
+          <div>
+            <h1 class="content-mobile">💼</h1>
+            <h1>
+              Resume.💼<br />
+              <span class="medium"
+                >Or download it
+                <a
+                  href="resume.pdf"
+                  aria-label="Naman's resume"
+                  target="_blank"
+                  rel="noopener"
+                  class="link"
+                  style="border-bottom: 0.075em solid var(--blue)"
+                  >here</a
+                >
+                if you like.</span
+              >
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="c6 main">
+      <!-- Education -->
+      <div class="section">
+        <h5 class="subtitle">Education</h5>
+        <h3>
+          <a
+            href="https://www.iiitbhopal.ac.in/"
+            target="_blank"
+            rel="noopener"
+            class="link juit-link"
+            >Indian Institute of Information Technology</a
+          >
+        </h3>
+        <p class="medium">Bachelor of Technology · Class of 2024</p>
+        <br />
+        <p>Computer Science & Engineering</p>
+        <p>CGPA 8.3</p>
+      </div>
+      <!-- Experience -->
+
+      <div class="section">
+        <h3>
+          <a
+            href="https://fiverr.com"
+            target="_blank"
+            rel="noopener"
+            class="link juit-link"
+            >Finolity</a
+          >
+        </h3>
+        <p class="medium">Frontend Web Developer · Apr 2022 to Aug 2022</p>
+        <br />
+        <p>
+          Developed websites for the startup and worked on their peoduct named
+          UpByte. Optimized many websites reducing their load time drastically
+          at the same time reducing server crashes. Setup cloud hosting for
+          clients webapps in AWS.
+        </p>
+      </div>
+      <!-- Organizations -->
+      <div class="section">
+        <h5 class="subtitle">Organizations</h5>
+        <h3>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener"
+            class="link"
+            style="color: #cb422a"
+            >Founding Member</a
+          >
+        </h3>
+        <p class="medium">Entrepreneurship Cell</p>
+        <br />
+        <p>
+          Founding Member of Entrepreneurship CELL to promote innovation,
+          business excellence and commitment towards goals among the students
+          with a vision to democratize entrepreneurship.
+        </p>
+      </div>
+
+      <!-- Projects -->
+      <div class="section">
+        <h3>
+          <a
+            href="/projects.html"
+            target="_blank"
+            rel="noopener"
+            class="link"
+            style="color: #cb422a"
+            >Projects</a
+          >
+      
+
+        <div style =" margin-top: 20px;"class="section">
+          <h5 class="subtitle">Skills</h5>
+          <h3>Web Development</h3>
+          <br />
+          <p>ReactJS, NodeJS, HTML5, Django ,FAST Api</p>
+        </div>
+
+        <div class="section">
+          <h3>Others</h3>
+          <br />
+          <p>MySQL, Git, AWS, MongoDB</p>
+        </div>
+
+        <div class="section">
+          <h3>Languages</h3>
+          <br />
+          <p>HTML/CSS, C/C++ , Javascript</p>
+        </div>
+
+        <div class="section">
+          <h3>Interests</h3>
+          <br />
+          <p>Swimming, Chess, Reading, Finanacial work</p>
+        </div>
+
+        <div class="section">
+        <h3>Strengths</h3>
+        <br />
+        <p>
+          Analytical Approach, Effective Communication, Creative and Innovative
+          approaches,Inquisitive Thinking, Proficiency in English, Teamwork
+        </p>
+      </div>
+    </main>
+
+    <footer class="c12 grid">
+      <div class="c6-left">
+        <p>
+          If you’re looking to work with me or want to grab some coffee, feel
+          free to email me at
+          <a
+            href="mailto:itznaman2001@gmail.com?subject=Hey!"
+            target="_blank"
+            rel="noopener"
+            >itznaman2001@gmail.com</a
+          >.
+        </p>
+      </div>
+      <div class="social">
+        <a href="https://github.com/nmnGo" target="_blank" rel="noopener"
+          ><img alt="Github icon" src="icons/github.svg" class="icons"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/naman-goyal-0b3335208/"
+          target="_blank"
+          rel="noopener"
+          ><img alt="LinkedIn icon" src="icons/linkedin.svg" class="icons"
+        /></a>
+        <a
+          href="https://auth.geeksforgeeks.org/user/nmngouza/practice"
+          target="_blank"
+          rel="noopener"
+          ><img
+            alt="GFG icon"
+            src="icons/120px-GeeksforGeeks.svg.png"
+            class="icons"
+        /></a>
+      </div>
+
+      <!-- Scroll To Top -->
+      <a
+        href="#top"
+        aria-label="scroll to top"
+        class="content-web no-display scroll-to-top"
+      ></a>
+    </footer>
+  </body>
+</html>

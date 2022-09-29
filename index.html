@@ -1,0 +1,158 @@
+<!-- Index -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head id="top">
+    <meta charset="UTF-8" />
+    <title>Naman Goyal</title>
+    <meta
+      name="Description"
+      content="I am a young and energetic Student, 
+      looking for challenging opportunities to grow my skills.
+       My intellectual curiosity also drives me to be a lifelong learner,
+        and so I'm seeking to connect with like-minded people to learn and grow 
+        more."
+    />
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/hover-min.css" />
+
+    <!-- Javascript -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+      /* Scroll button appears on scroll */
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 20) {
+          $(".scroll-to-top").removeClass("no-display");
+        } else {
+          $(".scroll-to-top").addClass("no-display");
+        }
+      });
+
+      /* Smooth Scrolling */
+      $(document).ready(function () {
+        $("a").on("click", function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              500,
+              function () {
+                window.location.hash = hash;
+              }
+            );
+          }
+        });
+      });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-SQWGXQ6RLM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-SQWGXQ6RLM");
+    </script>
+  </head>
+
+  <body class="grid">
+    <!-- Header -->
+    <header class="c12">
+      <!-- Nav -->
+      <div class="hero">
+        <div class="header">
+          <a href="/"
+            ><img alt="Naman's logo" src="images/myLogo.png" class="dc-logo"
+          /></a>
+          <h3 class="medium content-web">Naman Goyal</h3>
+          <nav class="nav">
+            <h5 class="option selected">Home</h5>
+            <h5 class="option"><a href="about.html">About</a></h5>
+            <h5 class="option"><a href="projects.html">Projects</a></h5>
+            <h5 class="option"><a href="resume.html">Resume</a></h5>
+          </nav>
+        </div>
+
+        <!-- Title -->
+        <div class="title">
+          <h1 class="content-web emoji"></h1>
+          <div style="margin-top: 100px; margin-bottom: 60px">
+            <h1 class="content-mobile"></h1>
+            <h1>Hello Friends, I'm Naman.</h1>
+            <h1 class="medium">
+              A Developer,A learner and a student who knows
+              <a
+                href="https://www.mongodb.com/mern-stack"
+                target="_blank"
+                rel="noopener"
+                class="link juit-link"
+                >Technologies and Business</a
+              >.
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <footer class="c12 grid">
+      <div class="c6-left">
+        <p>
+          If you’re looking to work with me or want to grab some coffee, feel
+          free to mail me at
+          <a
+            href="mailto:itznaman2001@gmail.com?subject=Hey!"
+            target="_blank"
+            rel="noopener"
+            >itznaman2001@gmail.com</a
+          >.
+        </p>
+      </div>
+
+      <div class="social">
+        <a href="https://github.com/nmnGo" target="_blank" rel="noopener"
+          ><img alt="Github icon" src="icons/github.svg" class="icons"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/naman-goyal-0b3335208/"
+          target="_blank"
+          rel="noopener"
+          ><img alt="LinkedIn icon" src="icons/linkedin.svg" class="icons"
+        /></a>
+        <a
+          href="https://auth.geeksforgeeks.org/user/nmngouza/practice"
+          target="_blank"
+          rel="noopener"
+          ><img
+            alt="GFG icon"
+            src="icons/120px-GeeksforGeeks.svg.png"
+            class="icons"
+        /></a>
+      </div>
+
+      <!-- Scroll To Top -->
+      <a
+        href="#top"
+        aria-label="scroll to top"
+        class="content-web no-display scroll-to-top"
+      ></a>
+    </footer>
+  </body>
+</html>
