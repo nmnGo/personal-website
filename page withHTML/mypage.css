@@ -1,0 +1,43 @@
+#main {
+    margin-top: 0px;
+}
+
+#image {
+    margin-top: 30px;
+    margin-left: 200px;
+    margin-right: 60px;
+    border-radius: 40px;
+    border-width: 4px;
+    border-style: double;
+    border-spacing: 4px;
+    border-color: rgb(233, 166, 22);
+}
+
+#image:hover {
+    height: 122px;
+    width: 122px;
+    border-color: royalblue;
+    border-radius: 40px;
+    border-width: 3px;
+    border-style: solid;
+    border-spacing: 4px;
+}
+
+#bbar {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+div {
+    margin-left: 20px;
+}
+
+table {
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #ee5d31;
+}
